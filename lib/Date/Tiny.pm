@@ -19,7 +19,7 @@ use overload 'ne'   => sub { "$_[0]" ne "$_[1]" };
 
 =pod
 
-=head2 new
+=method new
 
   my $date = Date::Tiny->new(
       year  => 2006,
@@ -45,7 +45,7 @@ sub new {
 
 =pod
 
-=head2 now
+=method now
 
   my $current_date = Date::Tiny->now;
 
@@ -69,7 +69,7 @@ sub now {
 
 =pod
 
-=head2 year
+=method year
 
 The C<year> accessor returns the 4-digit year for the date.
 
@@ -81,7 +81,7 @@ sub year {
 
 =pod
 
-=head2 month
+=method month
 
 The C<month> accessor returns the 1-12 month of the year for the date.
 
@@ -93,7 +93,7 @@ sub month {
 
 =pod
 
-=head2 day
+=method day
 
 The C<day> accessor returns the 1-31 day of the month for the date.
 
@@ -105,7 +105,7 @@ sub day {
 
 =pod
 
-=head2 ymd
+=method ymd
 
 The C<ymd> method returns the most common and accurate stringified date
 format, which returns in the form "2006-04-12".
@@ -129,7 +129,7 @@ sub ymd {
 
 =pod
 
-=head2 as_string
+=method as_string
 
 The C<as_string> method converts the date to the default string, which
 at present is the same as that returned by the C<ymd> method above.
@@ -145,7 +145,7 @@ sub as_string {
 
 =pod
 
-=head2 from_string
+=method from_string
 
 The C<from_string> method creates a new B<Date::Tiny> object from a string.
 
@@ -174,7 +174,7 @@ sub from_string {
 
 =pod
 
-=head2 DateTime
+=method DateTime
 
 The C<DateTime> method is used to create a L<DateTime> object
 that is equivalent to the B<Date::Tiny> object, for use in
