@@ -12,7 +12,7 @@ my %WriteMakefileArgs = (
     "ExtUtils::MakeMaker" => "6.17"
   },
   "DISTNAME" => "Date-Tiny",
-  "LICENSE" => "apache",
+  "LICENSE" => "perl",
   "MIN_PERL_VERSION" => "5.006",
   "NAME" => "Date::Tiny",
   "PREREQ_PM" => {
